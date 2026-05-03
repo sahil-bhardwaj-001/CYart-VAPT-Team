@@ -34,5 +34,4 @@
 | 26 | `sha256_evidence.png` | SHA256 hashes of all evidence files | evidence_logs.md, report |
 | 27 | `openvas_kioptrix.png` | OpenVAS findings on Kioptrix VM | report |
 | 28 | `kioptrix_root.png` | Root shell obtained on Kioptrix | report |
-
-
+| 29 | `wireshark_capture.png` | Wireshark showing plaintext HTTP credentials captured | evidence_logs.md, report |
