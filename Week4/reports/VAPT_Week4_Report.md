@@ -346,8 +346,8 @@ vsftpd 2.3.4 has a literal backdoor baked in — upgrade or just kill FTP and us
 ## 11. Attack Timeline
 
 | Action | Tool | Finding |
-|------|--------|------|---------|
-|Nmap reconnaissance | Nmap | 4 open services on all targets |
+|--------|------|---------|
+| Nmap reconnaissance | Nmap | 4 open services on all targets |
 | OpenVAS scan initiated | OpenVAS (192.168.56.103) | 19 vulnerabilities identified |
 | XSS to RCE chain executed | Burp Suite + nc | Full server shell obtained |
 | API BOLA testing | Burp Suite | Unauthorised data access confirmed |
