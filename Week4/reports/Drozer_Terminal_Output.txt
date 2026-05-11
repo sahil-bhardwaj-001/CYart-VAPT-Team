@@ -1,0 +1,211 @@
+┌──(kali㉿kali)-[~]
+└─$ drozer console connect 
+Socket Error
+<class 'RuntimeError'>
+yayerroryay you probably didn't specify a valid drozer server and that's why you're seeing this error message
+There was a problem connecting to the drozer Server.
+
+Things to check:
+
+ - is the drozer Server running?
+ - have you set up appropriate adb port forwards?
+ - have you specified the correct hostname and port with --server?
+ - is the server protected with SSL (add an --ssl switch)?
+ - is the agent protected with a password (add a --password switch)?
+
+Debug Information:
+[Errno 111] Connection refused
+
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ adb forward tcp:31415 tcp:31415
+31415
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ drozer console connect
+Selecting 359e48d8a95bc0a5 (unknown Phone 7.1.1)
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣷⠀⣀⣤⡆⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⡿⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣷⡖⠀⠀⠀
+⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⡿⢛⣿⢿⣿⡟⠋⠀⠀⠀⠀
+⣿⣿⣿⣶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠠⣾⣿⡿⠋⠀⠈⠀⢸⣿⡇⠀⠀⠀⠀⠀
+⢻⣿⣿⣟⠻⣿⣿⣷⣦⣀⠀⠀⠀⠀⠀⠻⠉⠀⠀⠀⠀⠀⢸⣿⡇⠀⠀⠀⠀⠀
+⢸⣿⣟⠿⠀⠀⠉⠛⢿⣿⡇⠀⠀⠀⠀⠈⡀⠀⠀⠀⠀⠀⣿⣿⠇⠀⠀⠀⠀⠀
+⠀⣿⣿⡄⠀⠀⠀⠀⠀⠈⡇⢀⠠⠀⠀⠀⠁⠀⠀⡀⠀⠠⠟⠛⠀⠀⠀⠀⠀⠀
+⠀⠸⣿⣷⡀⠀⠀⠀⠀⠀⠔⠁⠀⠀⠀⢀⢀⡀⠀⠈⠢⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢻⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣴⣿⠀⠔⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠻⠿⠇⠒⠈⡄⠀⠀⠀⠀⠀⠀⠈⡉⠁⠀⠀⠀⠁⠀⠀⠄⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⡠⠴⠄⠀⢀⠔⠀⠀⠀⠄⠌⠀⠀⡁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢁⣀⡀⠀⡀⠙⠄⠀⢀⠀⣠⣾⠄⣤⠊⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠄⡑⠁⠂⠀⣈⣥⣾⡿⢿⠀⠀⢄⠀⢀⣠⣤⣤⣴⣦
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⡀⠈⠀⠋⠿⠀⠀⠀⠄⠀⠌⣴⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠃⠀⠀⠀⠀⠀⠉⠀⠏⠀⠀⠈⠉⠙⠋
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡔⠈⠂⠄⠀⠀⠀⠀⡠⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠄⢀⣀⡰⠀⠂⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+drozer Console (v3.1.0)
+dz> dz> run app.package.attacksurface jakhar.aseem.diva
+*** Unknown syntax: dz> run app.package.attacksurface jakhar.aseem.diva
+dz> clear
+*** Unknown syntax: clear
+dz> run app.package.attacksurface jakhar.aseem.diva
+Attempting to run shell module
+Attack Surface:
+  3 activities exported
+  0 broadcast receivers exported
+  1 content providers exported
+  0 services exported
+    is debuggable
+dz> run app.activity.info -a jakhar.aseem.diva
+Attempting to run shell module
+Package: jakhar.aseem.diva
+  jakhar.aseem.diva.MainActivity
+    Permission: null
+  jakhar.aseem.diva.APICredsActivity
+    Permission: null
+  jakhar.aseem.diva.APICreds2Activity
+    Permission: null
+
+dz> run app.activity.start --component jakhar.aseem.diva jakhar.aseem.diva.MainActivity
+Attempting to run shell module
+dz> run app.provider.info -a jakhar.aseem.diva
+Attempting to run shell module
+Package: jakhar.aseem.diva
+  Authority: jakhar.aseem.diva.provider.notesprovider
+    Read Permission: null
+    Write Permission: null
+    Content Provider: jakhar.aseem.diva.NotesProvider
+    Multiprocess Allowed: False
+    Grant Uri Permissions: False
+
+dz> run app.provider.query content://jakhar.aseem.diva.provider/
+Attempting to run shell module
+Exception occured: Could not get a ContentProviderClient for content://jakhar.aseem.diva.provider/.
+dz> run app.package.manifest jakhar.aseem.diva
+Attempting to run shell module
+<manifest versionCode="1"
+          versionName="1.0"
+          package="jakhar.aseem.diva"
+          platformBuildVersionCode="23"
+          platformBuildVersionName="6.0-2166767">
+  <uses-sdk minSdkVersion="15"
+            targetSdkVersion="23">
+  </uses-sdk>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE">
+  </uses-permission>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE">
+  </uses-permission>
+  <uses-permission name="android.permission.INTERNET">
+  </uses-permission>
+  <application theme="@2131296387"
+               label="@2131099683"
+               icon="@2130903040"
+               debuggable="true"
+               allowBackup="true"
+               supportsRtl="true">
+    <activity theme="@2131296304"
+              label="@2131099683"
+              name="jakhar.aseem.diva.MainActivity">
+      <intent-filter>
+        <action name="android.intent.action.MAIN">
+        </action>
+        <category name="android.intent.category.LAUNCHER">
+        </category>
+      </intent-filter>
+    </activity>
+    <activity label="@2131099687"
+              name="jakhar.aseem.diva.LogActivity">
+    </activity>
+    <activity label="@2131099692"
+              name="jakhar.aseem.diva.HardcodeActivity">
+    </activity>
+    <activity label="@2131099693"
+              name="jakhar.aseem.diva.InsecureDataStorage1Activity">
+    </activity>
+    <activity label="@2131099694"
+              name="jakhar.aseem.diva.InsecureDataStorage2Activity">
+    </activity>
+    <activity label="@2131099695"
+              name="jakhar.aseem.diva.InsecureDataStorage3Activity">
+    </activity>
+    <activity label="@2131099696"
+              name="jakhar.aseem.diva.InsecureDataStorage4Activity">
+    </activity>
+    <activity label="@2131099697"
+              name="jakhar.aseem.diva.SQLInjectionActivity">
+    </activity>
+    <activity label="@2131099698"
+              name="jakhar.aseem.diva.InputValidation2URISchemeActivity">
+    </activity>
+    <activity label="@2131099699"
+              name="jakhar.aseem.diva.AccessControl1Activity">
+    </activity>
+    <activity label="@2131099682"
+              name="jakhar.aseem.diva.APICredsActivity">
+      <intent-filter>
+        <action name="jakhar.aseem.diva.action.VIEW_CREDS">
+        </action>
+        <category name="android.intent.category.DEFAULT">
+        </category>
+      </intent-filter>
+    </activity>
+    <activity label="@2131099688"
+              name="jakhar.aseem.diva.AccessControl2Activity">
+    </activity>
+    <activity label="@2131099681"
+              name="jakhar.aseem.diva.APICreds2Activity">
+      <intent-filter>
+        <action name="jakhar.aseem.diva.action.VIEW_CREDS2">
+        </action>
+        <category name="android.intent.category.DEFAULT">
+        </category>
+      </intent-filter>
+    </activity>
+    <provider name="jakhar.aseem.diva.NotesProvider"
+              enabled="true"
+              exported="true"
+              authorities="jakhar.aseem.diva.provider.notesprovider">
+    </provider>
+    <activity label="@2131099689"
+              name="jakhar.aseem.diva.AccessControl3Activity">
+    </activity>
+    <activity label="@2131099690"
+              name="jakhar.aseem.diva.Hardcode2Activity">
+    </activity>
+    <activity label="@2131099723"
+              name="jakhar.aseem.diva.AccessControl3NotesActivity">
+    </activity>
+    <activity label="@2131099691"
+              name="jakhar.aseem.diva.InputValidation3Activity">
+    </activity>
+  </application>
+</manifest>
+
+dz> run scanner.provider.injection -a jakhar.aseem.diva
+Attempting to run shell module
+Scanning jakhar.aseem.diva...
+Not Vulnerable:
+  content://jakhar.aseem.diva.provider.notesprovider
+  content://jakhar.aseem.diva.provider.notesprovider/
+
+Injection in Projection:
+  content://jakhar.aseem.diva.provider.notesprovider/notes
+  content://jakhar.aseem.diva.provider.notesprovider/notes/
+
+Injection in Selection:
+  content://jakhar.aseem.diva.provider.notesprovider/notes
+  content://jakhar.aseem.diva.provider.notesprovider/notes/
+dz> run scanner.provider.traversal -a jakhar.aseem.diva
+Attempting to run shell module
+Scanning jakhar.aseem.diva...
+Not Vulnerable:
+  content://jakhar.aseem.diva.provider.notesprovider/
+  content://jakhar.aseem.diva.provider.notesprovider
+  content://jakhar.aseem.diva.provider.notesprovider/notes
+  content://jakhar.aseem.diva.provider.notesprovider/notes/
+
+Vulnerable Providers:
+  No vulnerable providers found.
+dz> 
+
