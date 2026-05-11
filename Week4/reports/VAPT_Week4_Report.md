@@ -496,4 +496,19 @@ The three most urgent issues are being dealt with now. The rest have been handed
 - [GTFOBins — SUID Exploitation](https://gtfobins.github.io/)
 - [CVSS v4.0 Calculator](https://www.first.org/cvss/calculator/4.0)
 
+### D. Evidence Files
+
+All supporting evidence files are stored in the `reports/` folder alongside this report.
+
+| File | Type | Description |
+|------|------|-------------|
+| `DivaApplication.apk` | APK | Target Android app (DIVA — Damn Insecure and Vulnerable App) used for mobile testing |
+| `drozer-agent.apk` | APK | Drozer agent installed on the Android device/emulator for IPC testing |
+| `82ab8b2193b3cfb1c737e3a786be363a-java.zip` | Archive | MobSF-decompiled Java source code of DivaApplication.apk |
+| `82ab8b2193b3cfb1c737e3a786be363a-smali.zip` | Archive | MobSF-decompiled Smali bytecode of DivaApplication.apk |
+| `Static Analysis.csv` | CSV | MobSF static analysis results export — all findings in machine-readable format |
+| `Static Analysis.pdf` | PDF | MobSF static analysis report — formatted PDF export |
+| `screencapture-...-15_55_09.pdf` | PDF | Full-page screenshot of MobSF web UI showing analysis results |
+| `Drozer_Terminal_Output.txt` | Text | Raw Drozer console session output — commands run and responses from the device |
+
 ---

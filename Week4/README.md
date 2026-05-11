@@ -9,19 +9,26 @@
 ```
 week4/
 ├── README.md
-├── assets/                               ← All screenshots go here
+├── assets/                                         ← All screenshots go here
 ├── notes/
-│   └── theoretical_knowledge.md         ← Theory: all 6 topics
+│   └── theoretical_knowledge.md                   ← Theory: all 6 topics
 ├── logs/
-│   ├── exploitation_logs.md             ← Advanced exploitation & exploit chains
-│   ├── api_testing_logs.md              ← API security testing logs
-│   ├── privesc_persistence_logs.md      ← Privilege escalation & persistence
-│   ├── network_attacks_logs.md          ← Network protocol attacks
-│   └── mobile_testing_logs.md          ← Mobile application testing
+│   ├── exploitation_logs.md                       ← Advanced exploitation & exploit chains
+│   ├── api_testing_logs.md                        ← API security testing logs
+│   ├── privesc_persistence_logs.md                ← Privilege escalation & persistence
+│   ├── network_attacks_logs.md                    ← Network protocol attacks & mobile testing
 ├── reports/
-│   └── VAPT_Week4_Report.md            ← Full PTES report
+│   ├── VAPT_Week4_Report.md                       ← Full PTES report
+│   ├── Drozer_Terminal_Output.txt                 ← Raw Drozer console output
+│   ├── DivaApplication.apk                        ← Target APK (DIVA)
+│   ├── drozer-agent.apk                           ← Drozer agent APK
+│   ├── 82ab8b2193b3cfb1c737e3a786be363a-java.zip  ← MobSF decompiled Java source
+│   ├── 82ab8b2193b3cfb1c737e3a786be363a-smali.zip ← MobSF decompiled Smali source
+│   ├── Static Analysis.csv                        ← MobSF static analysis export (CSV)
+│   ├── Static Analysis.pdf                        ← MobSF static analysis export (PDF)
+│   └── screencapture-...-15_55_09.pdf             ← Full MobSF report (PDF screenshot)
 └── workflow/
-    └── VAPT_Workflow.md                ← Workflow diagram & steps
+    └── VAPT_Workflow.md                           ← Workflow diagram & steps
 ```
 
 ---
@@ -32,7 +39,7 @@ week4/
 |------|----|-----------|
 | Attacker | Kali Linux 2024.x | 192.168.56.101 |
 | Primary Target | Metasploitable2 (DVWA hosted here) | 192.168.56.104 |
-| Windows Target | Windows 10 Tiny VM | 192.168.56.105 |
+| Windows Target | Windows 10 VM | 192.168.56.107 |
 | Vulnerability Scanner | OpenVAS VM (host browser access) | 192.168.56.103 |
 
 ---
@@ -57,9 +64,12 @@ week4/
 - [💥 Exploitation Logs](logs/exploitation_logs.md)
 - [🔌 API Testing Logs](logs/api_testing_logs.md)
 - [🔑 Privilege Escalation & Persistence](logs/privesc_persistence_logs.md)
-- [🌐 Network Attacks](logs/network_attacks_logs.md)
-- [📱 Mobile Testing](logs/mobile_testing_logs.md)
+- [🌐 Network Attacks & Mobile Testing](logs/network_attacks_logs.md)
 - [📋 Full VAPT Report](reports/VAPT_Week4_Report.md)
+- [🖥️ Drozer Terminal Output](reports/Drozer_Terminal_Output.txt)
+- [📱 MobSF Static Analysis (PDF)](reports/Static%20Analysis.pdf)
+- [📊 MobSF Static Analysis (CSV)](reports/Static%20Analysis.csv)
+- [📦 DIVA APK](reports/DivaApplication.apk)
 - [⚙️ Workflow](workflow/VAPT_Workflow.md)
 
 ---
