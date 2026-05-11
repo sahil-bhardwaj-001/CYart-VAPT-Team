@@ -8,7 +8,7 @@
 | **Report Title** | Comprehensive VAPT — Advanced Exploitation, API Security, Privilege Escalation, Network & Mobile |
 | **Classification** | Confidential |
 | **Prepared By** | Sahil Bhardwaj |
-| **Targets** | Metasploitable2 (192.168.56.104), Windows 10 Tiny (192.168.56.105) |
+| **Targets** | Metasploitable2 (192.168.56.104), Windows 10 (192.168.56.107) |
 | **Scanner** | OpenVAS VM — 192.168.56.103 (accessed via host browser) |
 | **Methodology** | PTES + OWASP Top 10 + OWASP API Top 10 + OWASP Mobile Top 10 |
 
@@ -68,13 +68,12 @@ Week 4 was the busiest one yet. We covered five areas across two target VMs and 
 |--------|----|----|------|
 | Kali Linux | 192.168.56.101 | Kali 2024.x | Attacker |
 | Metasploitable2 | 192.168.56.104 | Ubuntu 8.04 | Primary target + DVWA host |
-| Windows 10 Tiny | 192.168.56.105 | Windows 10 | Windows target |
+| Windows 10 | 192.168.56.107 | Windows 10 | Windows target |
 | OpenVAS VM | 192.168.56.103 | Greenbone | Scanner — host browser access |
 
 ### Rules of Engagement
 - Isolated lab network — all VMs on Host-Only adapter
-- Testing window: 2025-08-30, 09:00–17:00
-- All actions logged with timestamps
+- All actions logged
 - No real-world systems targeted
 
 ---
@@ -169,7 +168,7 @@ id  # uid=0(root)
 
 ### 6.2 AlwaysInstallElevated (Windows)
 
-**Finding:** F008 | **CVSS:** 7.8 High | **Target:** 192.168.56.105
+**Finding:** F008 | **CVSS:** 7.8 High | **Target:** 192.168.56.107
 
 ```
 Both HKCU and HKLM AlwaysInstallElevated = 0x1
@@ -196,7 +195,7 @@ SMB signing was off on the Windows 10 box. Responder picked up the NTLM auth att
 
 | Attack ID | Technique | Target IP | Status | Outcome |
 |-----------|-----------|-----------|--------|---------|
-| 015 | SMB Relay | 192.168.56.105 | ✅ Success | NTLM Hash captured |
+| 015 | SMB Relay | 192.168.56.107 | ✅ Success | NTLM Hash captured |
 
 ### 7.2 ARP Spoofing MitM
 
