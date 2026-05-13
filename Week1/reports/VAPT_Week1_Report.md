@@ -274,6 +274,8 @@ nikto -h http://192.168.56.104
 - **Remote Code Execution** — CVE-2012-1823 (PHP CGI)
 - **Command Injection** — Multiple endpoints
 
+> 📄 **Full ZAP findings exported as PDF:** [`2026-04-30-ZAP-Report-.pdf`](2026-04-30-ZAP-Report-.pdf) — contains the complete machine-generated report of all alerts detected during the automated scan, including request/response evidence and CWE references for each finding.
+
 ---
 
 ### 7.5 Exploitation Validation Using Metasploit

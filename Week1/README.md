@@ -18,7 +18,8 @@ week1/
 │   └── exploitation_logs.md         ← Exploitation validation logs
 ├── reports/
 │   ├── VAPT_Week1_Report.md         ← Full professional PTES-based report
-│   └── vapt_task01.pdf              ← Original PDF submission
+│   ├── vapt_task01.pdf              ← Original PDF submission (full report)
+│   └── 2026-04-30-ZAP-Report-.pdf  ← OWASP ZAP automated scan findings (exported from ZAP)
 └── workflow/
     └── VAPT_Workflow.md             ← End-to-end workflow diagram & description
 ```
@@ -78,6 +79,7 @@ week1/
 - [💥 Exploitation Logs](logs/exploitation_logs.md)
 - [📋 Full VAPT Report](reports/VAPT_Week1_Report.md)
 - [📄 Original PDF Report](reports/vapt_task01.pdf)
+- [🌐 ZAP Findings Report (PDF)](reports/2026-04-30-ZAP-Report-.pdf)
 - [⚙️ Workflow](workflow/VAPT_Workflow.md)
 - [🖼️ Assets Directory](assets/)
 
